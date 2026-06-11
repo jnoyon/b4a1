@@ -1,5 +1,6 @@
 import TestimonialIcon from "./icons/TestimonialIcon";
 import Heading from "./Heading";
+import SubHeading from "./SubHeading";
 
 const testimonials = [
   {
@@ -19,15 +20,13 @@ export default function Testimonial() {
           <div className="px-[14px] py-[6px] bg-white shadow-[0px_0px_0px_4px_rgba(55,50,47,0.05)] overflow-hidden rounded-[90px] flex justify-start items-center gap-[8px] border border-[rgba(2,6,23,0.08)] shadow-xs">
             <TestimonialIcon></TestimonialIcon>
             <div className="text-center flex justify-center flex-col text-[#37322F] text-xs font-medium leading-3">
-              Testimonials
+              {Testimonial.name}
             </div>
           </div>
-          <Heading text="Confidence backed by results"></Heading>
-          <div className="self-stretch text-center text-[#605A57] text-sm sm:text-base font-normal leading-6 sm:leading-7">
-            Our customers achieve more each day
-            <br className="hidden sm:block" />
-            because their tools are simple, powerful, and clear.
-          </div>
+          <Heading text="Confidence backed by results" />
+          <SubHeading
+            text={`Our customers achieve more each day  because their tools are simple, powerful, and clear.`}
+          />
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import Heading from "./Heading";
 import PricingIcon from "./icons/PricingIcon";
+import SubHeading from "./SubHeading";
 export default function Pricing() {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-2 border-b border-[rgba(55,50,47,0.12)]">
@@ -12,12 +13,7 @@ export default function Pricing() {
             </div>
           </div>
           <Heading text="Choose the perfect plan for your business"></Heading>
-          <div className="self-stretch text-center text-[#605A57] text-base font-normal leading-7">
-            Scale your operations with flexible pricing that grows with your
-            team.
-            <br />
-            Start free, upgrade when you're ready.
-          </div>
+          <SubHeading text="Scale your operations with flexible pricing that grows with your team. Start free, upgrade when you're ready."></SubHeading>
         </div>
       </div>
     </div>

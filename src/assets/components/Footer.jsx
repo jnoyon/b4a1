@@ -1,6 +1,8 @@
 import XIcon from "./icons/XIcon";
 import LinkedInIcon from "./icons/LinkedInIcon";
 import GithubIcon from "./icons/GithubIcon";
+import NavLink from "./NavLink";
+import Brand from "./Brand";
 
 export default function Footer() {
   return (
@@ -8,9 +10,7 @@ export default function Footer() {
       <div className="self-stretch h-auto flex flex-col md:flex-row justify-between items-stretch pr-0 pb-8 pt-0">
         <div className="h-auto p-4 md:p-8 flex flex-col justify-start items-start gap-8">
           <div className="self-stretch flex justify-start items-center gap-3">
-            <div className="text-center text-[#49423D] text-xl font-semibold leading-4">
-              Brillance
-            </div>
+            <Brand></Brand>
           </div>
           <div className="text-[rgba(73,66,61,0.90)] text-sm font-medium leading-[18px]">
             Coding made effortless
@@ -34,21 +34,11 @@ export default function Footer() {
               Product
             </div>
             <div className="flex flex-col justify-end items-start gap-2">
-              <div className="text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Features
-              </div>
-              <div className="text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Pricing
-              </div>
-              <div className="text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Integrations
-              </div>
-              <div className="text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Real-time Previews
-              </div>
-              <div className="text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Multi-Agent Coding
-              </div>
+              <NavLink text="Features" link="#"></NavLink>
+              <NavLink text="Pricing" link="#"></NavLink>
+              <NavLink text="Integrations" link="#"></NavLink>
+              <NavLink text="Real-time Previews" link="#"></NavLink>
+              <NavLink text="Multi-Agent Coding" link="#"></NavLink>
             </div>
           </div>
 
@@ -57,21 +47,10 @@ export default function Footer() {
               Company
             </div>
             <div className="flex flex-col justify-center items-start gap-2">
-              <div className="text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                About us
-              </div>
-              <div className="text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Our team
-              </div>
-              <div className="text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Careers
-              </div>
-              <div className="text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Brand
-              </div>
-              <div className="text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Contact
-              </div>
+              <NavLink text="About us" link="#"></NavLink>
+              <NavLink text="Career" link="#"></NavLink>
+              <NavLink text="Brand" link="#"></NavLink>
+              <NavLink text="Contact" link="#"></NavLink>
             </div>
           </div>
 
@@ -80,21 +59,11 @@ export default function Footer() {
               Resources
             </div>
             <div className="flex flex-col justify-center items-center gap-2">
-              <div className="self-stretch text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Terms of use
-              </div>
-              <div className="self-stretch text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                API Reference
-              </div>
-              <div className="self-stretch text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Documentation
-              </div>
-              <div className="self-stretch text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Community
-              </div>
-              <div className="self-stretch text-[#49423D] text-sm font-normal leading-5 cursor-pointer hover:text-[#37322F] transition-colors">
-                Support
-              </div>
+              <NavLink text="Terms of use" link="#"></NavLink>
+              <NavLink text="API Reference" link="#"></NavLink>
+              <NavLink text="Documentation" link="#"></NavLink>
+              <NavLink text="Community" link="#"></NavLink>
+              <NavLink text="Support" link="#"></NavLink>
             </div>
           </div>
         </div>

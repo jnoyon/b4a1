@@ -1,6 +1,5 @@
-import React from "react";
 
-export default function LinkedInIcion() {
+export default function LinkedInIcon() {
   return (
     <svg
       width="16"

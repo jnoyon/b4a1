@@ -4,6 +4,7 @@ import workOrder from "../../assets/images/services/work-order.png";
 import workSync from "../../assets/images/services/work-sync.png";
 import integration from "../../assets/images/services/integration.png";
 import speak from "../../assets/images/services/speak.png";
+import SubHeading from "./SubHeading";
 
 const services = [
   {
@@ -36,15 +37,13 @@ export default function Services() {
           <div className="px-[14px] py-[6px] bg-white shadow-[0px_0px_0px_4px_rgba(55,50,47,0.05)] overflow-hidden rounded-[90px] flex justify-start items-center gap-[8px] border border-[rgba(2,6,23,0.08)] shadow-xs">
             <ServiceIcon></ServiceIcon>
             <div className="text-center flex justify-center flex-col text-[#37322F] text-xs font-medium leading-3">
-              Services
+              {Services.name}
             </div>
           </div>
           <Heading text="Built for absolute clarity and focused work"></Heading>
-          <div className="self-stretch text-center text-[#605A57] text-sm sm:text-base font-normal leading-6 sm:leading-7">
-            Stay focused with tools that organize, connect
-            <br />
-            and turn information into confident decisions.
-          </div>
+          <SubHeading
+            text={`Stay focused with tools that organize, connect  and turn information into confident decisions.`}
+          />
         </div>
       </div>
 
